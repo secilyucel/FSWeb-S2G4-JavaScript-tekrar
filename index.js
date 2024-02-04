@@ -64,8 +64,8 @@ function CemberinCevresi(yariCapi) {
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
 
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinAlani(yariCap) {
+  return pi * yariCap * yariCap
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
@@ -99,12 +99,26 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+enbuyuk = 0
+for(let i = 0; i<sayilar.length; i++){
+  if (sayilar[i] > enbuyuk) {
+    enbuyuk = sayilar[i];
+  }
+}
+enkucuk = 0 
+for(let i = 0; i<sayilar.length; i++){
+  if (sayilar[i] < enkucuk) {
+    enkucuk = sayilar[i];
+  }
+}
 
 // 3b çözümü:
 
-/* kodlar buraya */
-
+ucetambolunenler = [];
+sayilar.forEach(function (sayi){
+  if (sayi % 3 == 0) ucetambolunenler.push(sayi) 
+} //sayılar arrayını tara, buldugun sayıları sayi parametresine ata, uce tam bolunenler adında bir array olustur ve sayi parametresine ekle.
+)
 // 3c çözümü:
 
 /* kodlar buraya */
